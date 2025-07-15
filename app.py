@@ -7,7 +7,7 @@ model  = joblib.load("price_model.pkl")
 scaler = joblib.load("scaler.pkl")
 le_bal = joblib.load("balcony_encoder.pkl")   # only balcony encoder needed
 
-st.title("🏠 House Rent Price Predictor")
+st.title("🏠 House Price Predictor")
 
 # ── User inputs ───────────────────────────────────────────────────
 area            = st.number_input("Total Area (sqft)", 100, 20000, 1000)
